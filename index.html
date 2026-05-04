@@ -63,9 +63,12 @@ header {
   background: #ffb3ba;
   transform: translateX(5px);
 }
+
+/* UPDATED PART */
 .toc-item {
- display: flex;
-  align-items: center; /* canh giữa theo chiều dọc */
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 12px 0;
 }
 
@@ -73,25 +76,33 @@ header {
   flex: 1;
 }
 
-.video-link {
-  flex: 0 0 130px;   /* chiều rộng cố định */
-  margin-left: auto; /* đẩy sang phải tuyệt đối */
-  width: 130px;     /* độ dài cố định */
+.video-link, .exercise-link {
+  flex: 0 0 130px;
   text-align: center;
-  background: #ffd6a5;
   padding: 12px;
   border-radius: 10px;
   text-decoration: none;
   color: #3a3a3a;
-  transition: 0.3s;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.video-link {
+  background: #ffd6a5;
 }
 
 .video-link:hover {
   background: #fdffb6;
 }
 
+.exercise-link {
+  background: #caffbf;
+}
 
+.exercise-link:hover {
+  background: #bdb2ff;
+}
+/* END UPDATE */
 
 .back-btn {
   margin-top: 30px;
@@ -124,20 +135,33 @@ footer {
   <h2>📚 Table of Contents - Nội dung Tổng Ôn Anh vào 10</h2>
 
   <ul class="toc-list">
-    <li><a href="https://drive.google.com/file/d/1c5tg6rTJuyyI27IYbLyA-XVSk_ODBT7K/view?usp=sharing" 
-   target="_blank" rel="noopener noreferrer">File Bài tập Tổng ôn toàn diện</a></li>
-    
+    <li>
+      <a href="https://drive.google.com/file/d/1c5tg6rTJuyyI27IYbLyA-XVSk_ODBT7K/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        File Bài tập Tổng ôn toàn diện
+      </a>
+    </li>
 
-<li class="toc-item">
-<a href="https://drive.google.com/file/d/1GEudYHKg6whBeDI4PAi_Tpns2H8pYg3c/view?usp=drive_link">Lesson 1: Vc chia thì Đơn - Danh từ</a>
-  <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDJm0pvdzqhTZAaT4FRKkpGAX7NP67uYZdOWXZ-KCdBbKQ?e=JedoyT" target="_blank">Bài giảng</a>
-</li>
+    <!-- UPDATED LESSON ITEM -->
+    <li class="toc-item">
+      <a class="lesson-link" href="https://drive.google.com/file/d/1GEudYHKg6whBeDI4PAi_Tpns2H8pYg3c/view?usp=drive_link">
+        Lesson 1: Vc chia thì Đơn - Danh từ
+      </a>
 
+      <a class="video-link" href="https://1drv.ms/v/c/1f67d43d980925ec/IQDJm0pvdzqhTZAaT4FRKkpGAX7NP67uYZdOWXZ-KCdBbKQ?e=JedoyT" target="_blank">
+        Bài giảng
+      </a>
+
+      <a class="exercise-link" href="https://docs.google.com/document/d/1jiuFaPKNfIm0jS4wAevhDnlKaU2AkaJS/edit?usp=drive_link&ouid=106439726873265563656&rtpof=true&sd=true" target="_blank">
+        Bài tập
+      </a>
+    </li>
+    <!-- END UPDATE -->
 
   </ul>
 
-  <!-- Quay lại trang chính -->
-  <a href="https://lopanhthayket-site.github.io/lopanhthayket_thcs/" class="back-btn">⬅ Quay về trang chính</a>
+  <a href="https://lopanhthayket-site.github.io/lopanhthayket_thcs/" class="back-btn">
+    ⬅ Quay về trang chính
+  </a>
 </div>
 
 <footer>
